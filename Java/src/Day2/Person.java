@@ -6,9 +6,9 @@ public class Person {
     protected String birthdate; //protected can be used and modified only by children or the class herself
     protected String placeOfBrith;
     private String address; //with private types and protected types, we need getters and setters to modify the value
-    private long phoneNumber;
+    private String phoneNumber;
 
-    public Person(String name,String surname,String birthdate, String placeOfBrith,String address,long phoneNumber){
+    public Person(String name,String surname,String birthdate, String placeOfBrith,String address,String phoneNumber){
         this.name=name;
         this.surname=surname;
         this.birthdate=birthdate;
@@ -20,19 +20,19 @@ public class Person {
     public String getAddress(){
         return address;
     }
-    public long getNumber(){
+    public String getNumber(){
         return phoneNumber;
     }
 
     public void setAddress(String newAddress) {
-        if (newAdress.length() <= 10) {
-            this.address = newAdress;
+        if (newAddress.length() >= 10) {
+            this.address = newAddress;
         } else {
             System.out.println("Address is too short!");
         }
     }
 
-    public void setPhoneNumber(long newPhoneNumber) {
+    public void setPhoneNumber(String newPhoneNumber) {
         if (newPhoneNumber.length() < 10) {
             this.phoneNumber = newPhoneNumber;
         } else {
@@ -42,12 +42,3 @@ public class Person {
 
     }
 
-
-
-
-
-
-
-
-
-}
