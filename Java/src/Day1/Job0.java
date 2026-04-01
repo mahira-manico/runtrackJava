@@ -8,7 +8,7 @@ public class Job0 {
         long year=2026;
         float gpa=3.56f;
         boolean isStudent=true;
-        int TOTO=3.817; //Incompatible type, must be double
+        int TOTO=3; //3.817 Incompatible type, must be double
         System.out.println(age); //used to display a value
         System.out.println(name);
         System.out.println(gender);
