@@ -1,6 +1,6 @@
 package Day1;
 
-public class Job03 {
+public class Job3 {
     public static void main(String[] args){
         int[] T=new int[10];
         for(int i=0;i<T.length;i++){
