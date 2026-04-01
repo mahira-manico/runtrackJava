@@ -11,7 +11,7 @@ public class Job8 {
             sumCube+=i*i*i; //we use a power calcul
         }
         System.out.println("The sum of "+n +" is "+sumCube);
-        sc.close;
+        sc.close();
 
 
     }
