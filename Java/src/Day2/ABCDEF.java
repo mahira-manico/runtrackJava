@@ -34,10 +34,10 @@ public class ABCDEF {
     }
     private static void search(A[] as){
         int counter=0;
-        for(int i = 0; i< as.length; i++){
-          if(as[i]!=null){
-              if(as[i] instanceof B){
-                  counter++;
+        for(int i = 0; i< as.length; i++){ //For loop to check all the keys in the list
+          if(as[i]!=null){ //Check is there is no null
+              if(as[i] instanceof B){ //Search for all the B related keys
+                  counter++; //Add to the counter
               }
           }
         }
@@ -47,7 +47,7 @@ public class ABCDEF {
         int totalD=0;
         for(int i=0; i<as.length;i++){
             if (as[i] != null) {
-                if(as[i] instanceof D tempD){
+                if(as[i] instanceof D tempD){  //Use of cast to change A into D temporarily
                     totalD+=tempD.d;
                 }
             }
@@ -57,23 +57,23 @@ public class ABCDEF {
 
 }
 
-class A{
+class A{ //class parent
     public A(){}
 }
 
-class B extends A{
+class B extends A{ //B inherit A
     public B(){
         super();
     }
 }
 
-class C extends B{
+class C extends B{ //C inherit B and also A
     public C(){
         super();
     }
 }
 
-class D extends A{
+class D extends A{ //D inherit only A
     protected int d=1;
 
     public D(int x){
@@ -86,13 +86,13 @@ class D extends A{
     }
 }
 
-class E extends D{
+class E extends D{ //E inherit D and A
     public E(){
         super();
     }
 }
 
-class F extends D{
+class F extends D{ //F inherit D and A
     public F(){
         super();
     }
