@@ -29,6 +29,7 @@ public class ABCDEF {
         as[6]=new B();
 
         search(as);
+        addition(as);
 
     }
     private static void search(A[] as){
@@ -38,12 +39,22 @@ public class ABCDEF {
               if(as[i] instanceof B){
                   counter++;
               }
-
           }
-
         }
         System.out.println("There is "+counter+" instance of class B");
     }
+    private static void addition(A[] as){
+        int totalD=0;
+        for(int i=0; i<as.length;i++){
+            if (as[i] != null) {
+                if(as[i] instanceof D tempD){
+                    totalD+=tempD.d;
+                }
+            }
+        }
+        System.out.println("There is a total of "+totalD+" D.");
+    }
+
 }
 
 class A{
