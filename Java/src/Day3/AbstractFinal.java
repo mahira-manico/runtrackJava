@@ -7,7 +7,7 @@ public class AbstractFinal {
         tab[1]=new B();
         tab[2]=new C();
         ((B)tab[1]).b=2; //tab could not find symbol b, needed (B) to find it
-        ((C)tab[2]).c=3;  //c is a final value, a constant so she cannot be changed
+        ((C)tab[2]).c=3;  //c is a final value, a constant cannot be changed
 
     }
 }
