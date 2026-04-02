@@ -28,8 +28,21 @@ public class ABCDEF {
         as[5]=new D(4);
         as[6]=new B();
 
-        
+        search(as);
 
+    }
+    private static void search(A[] as){
+        int counter=0;
+        for(int i = 0; i< as.length; i++){
+          if(as[i]!=null){
+              if(as[i] instanceof B){
+                  counter++;
+              }
+
+          }
+
+        }
+        System.out.println("There is "+counter+" instance of class B");
     }
 }
 
