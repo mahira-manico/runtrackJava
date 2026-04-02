@@ -94,6 +94,15 @@ class Circle{
 
     }
 
+    class RectangleColor extends Rectangle{
+        int color;
+
+        public RectangleColor(int color, double width, double height) { //Constructor done
+            super(width, height);
+            this.color=color;
+        }
+    }
+
 }
 
 
